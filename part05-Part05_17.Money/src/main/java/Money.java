@@ -46,7 +46,7 @@ public class Money {
     }
     public Money minus(Money decreaser){
         
-        Money newMoney;
+       Money newMoney;
        int finalMoney = (this.euros * 100 + this.cents) - (decreaser.euros * 100 + decreaser.cents);
        if (finalMoney <= 0){
            newMoney = new Money(0, 0);
